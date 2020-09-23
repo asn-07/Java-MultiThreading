@@ -1,4 +1,6 @@
 HELP.md
+README.md
+Java-MultiThreading.iml
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
