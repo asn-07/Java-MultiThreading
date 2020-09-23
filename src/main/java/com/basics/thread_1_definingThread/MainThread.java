@@ -20,17 +20,13 @@ public class MainThread {
 
     public static void main(String[] args) {
 
-        DefineThreadByExtendingThreadClass t = new DefineThreadByExtendingThreadClass(); // It is the class which exteded Thread Class.
-
+        DefineThreadByExtendingThreadClass t = new DefineThreadByExtendingThreadClass(); // It is the class which extended Thread Class.
         t.setName("Demo Thread"); // Naming the Thread
-
-        t.start(); // Startig of the Thread, Internally calls run() method, Especially No-Argument run() method
+        t.start(); // Starting of the Thread, Internally calls run() method, Especially No-Argument run() method
 
         //job of main Thread
-
-        System.out.println("Executed by :" +Thread.currentThread().getName()+" Thread");
         //we can get current executing thread object by using Thread.currentThread() method.
-
+        System.out.println("Executed by :" +Thread.currentThread().getName()+" Thread");
 
         for (int i=0; i<10; i++){
             System.out.println("Main Thread count : "+i);
@@ -51,6 +47,6 @@ class DefineThreadByExtendingThreadClass extends Thread{
 }
 
 /**
- * Note : Not Recommended as Inheritance benifit is missing because
+ * Note : Not Recommended as Inheritance benefit is missing because
  * we can't extend any other class if we extend Thread class to define Thread.
  */
