@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Java-Multi-Threading" />
+        <module name="Java-MultiThreading" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Java-Multi-Threading" target="1.5" />
+      <module name="Java-MultiThreading" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -5,6 +5,17 @@ package com.basics.thread_1_definingThread;
  */
 
 /**
+ *
+ *Definition - What does Thread mean?
+ *A thread, in the context of Java, is the path followed when executing a program.
+ * All Java programs have at least one thread, known as the main thread, which is created by the Java Virtual Machine (JVM) at the program’s start,
+ * when the main() method is invoked with the main thread.
+ *
+ * The Java Virtual Machine allows an application to have multiple threads of execution running concurrently.
+ */
+
+
+/**
  * Defining the Thread by extending Thread Class
  *
  * Thread scheduler is the part of JVM.
@@ -24,7 +35,7 @@ public class MainThread {
         t.setName("Demo Thread"); // Naming the Thread
         t.start(); // Starting of the Thread, Internally calls run() method, Especially No-Argument run() method
 
-        //job of main Thread
+        // Below code execution is the job of main Thread
         //we can get current executing thread object by using Thread.currentThread() method.
         System.out.println("Executed by :" +Thread.currentThread().getName()+" Thread");
 

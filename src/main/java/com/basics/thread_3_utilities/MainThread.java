@@ -3,12 +3,18 @@ package com.basics.thread_3_utilities;
 /**
  * @author Anand SN
  */
+
+/**
+ * Every thread has a priority. Threads with higher priority are executed in preference to threads with lower priority.
+ * When code running in some thread creates a new Thread object, the new thread has its priority initially set equal to the priority of the creating thread.
+ */
+
+
 public class MainThread {
     public static void main(String[] args) {
 
         ThreadUtility utility = new ThreadUtility();
         Thread t1 = new Thread(utility);
-
         t1.setName("demoThread"); //Setting the name of the thread
 
         t1.setPriority(10);//Setting the Thread Priority. Allowed values are 1 to 10
@@ -16,7 +22,7 @@ public class MainThread {
          * t1.setPriority(Thread.MAX_PRIORITY); //value is 10
          * t1.setPriority(Thread.MIN_PRIORITY); // value is 1
          * t1.setPriority(Thread.NORM_PRIORITY); // value is 5
-
+         *
          * Thread Scheduler will use priorities while allocating processor
          * The Thread which is having highest priority will get the chance first
          */
